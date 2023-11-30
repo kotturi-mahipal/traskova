@@ -1,0 +1,19 @@
+{
+  "name": "expense-tracker",
+  "version": "1.0.0",
+  "description": "Budget Tracker for myself",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite"
+  },
+  "author": "MG Mahi",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5"
+  },
+  "dependencies": {
+    "vite": "^5.0.4"
+  }
+}

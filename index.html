@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <script src="JS/index.js"></script>
+    <title>Traskova.io</title>
+  </head>
+  <body class="p-4">
+    <h1 class="text-5xl mb-12 mt-5 font-bold">Traskova Money Manager.___</h1>
+
+    <main class="">
+      <header class="max-w-4xl mx-auto rounded-xl border-red-600">
+        <div class="manager-info px-6 py-8 grid grid-rows-2 gap-0 text-center">
+          <div class="budget-info">
+            <h2 class="text-sm font-semibold uppercase">Budget</h2>
+            <span class="amount-text font-bold text-4xl">₹10000</span>
+          </div>
+          <div class="income-expense-info grid grid-cols-2 gap-12 px-20">
+            <div class="income-info bg-green-400 rounded-xl py-4 px-0">
+              <h3 class="text-xs font-semibold uppercase">Income</h3>
+              <span class="amount-text font-bold text-3xl" id="expense"
+                >₹10000</span
+              >
+            </div>
+            <div class="expense-info bg-red-500 rounded-xl py-4 px-0">
+              <h3 class="text-xs font-semibold uppercase">Expense</h3>
+              <span class="amount-text font-bold text-3xl" id="expense"
+                >₹10000</span
+              >
+            </div>
+          </div>
+
+          <!-- Add expense -->
+          <!-- <div class="add-expense-inside mt-6">
+            <button
+              type="button"
+              class="add-button bg-white p-2 rounded-lg font-bold uppercase"
+            >
+              Add Expense
+            </button>
+          </div>
+        </div> -->
+
+      </header>
+
+        <!-- todo: Add expense button -->
+    <section>
+        <div
+          class="add-expense container mx-auto mt-5 p-4 max-w-4xl flex justify-center items-center rounded-xl text-lg"
+        >
+          <button
+            type="button"
+            class="add-button bg-white p-2 rounded-lg font-bold text-xl uppercase flex justify-around items-center"
+          >
+            Add Expense
+            <span class="material-symbols-outlined">add_circle</span>
+          </button>
+        </div>
+
+    </section>
+
+    <section id="transactions" class="container max-w-4xl mx-auto mt-5 p-4 rounded-xl">
+        <div class="utility-buttons grid grid-cols-3 gap-20">
+            <button class="u-button p-3 rounded-3xl bg-white font-semibold text-blue-700">
+                Sort
+            </button>
+            <button class="u-button p-3 rounded-3xl bg-white font-semibold text-blue-700">
+                Filter  
+            </button>
+            <button class="u-button bg-red-600 p-3 rounded-3xl font-semibold text-white">
+                Clear
+            </button>
+        </div>
+
+        <div id="transactionsList">
+
+        </div>
+    </section>
+
+    <section id="hidden" class="container max-w-4xl mx-auto p-4 rounded-xl">
+    <form class="" action="#" method="POST">
+        <div class="grid grid-cols-2 grid-rows-2 gap-4 mb-4">
+            <div>
+              <label for="expense-label" class="block text-sm font-medium leading-6 text-gray-900">Label</label>
+              <div class="mt-2">
+                <input id="label" name="expense-label" placeholder="Amount spent on" type="text" required class="block w-full rounded-md border-0 py-1.5 px-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+      
+            <div>
+              <div class="flex items-center justify-between">
+                <label for="expense" class="block text-sm font-medium leading-6 text-gray-900">Amount</label>
+              </div>
+              <div class="mt-2">
+                <input id="expense" name="expense" type="number" placeholder="Enter amount" required class="block w-full rounded-md border-0 py-1.5 px-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+      
+            <div>
+              <div class="flex items-center justify-between">
+                <label for="category" class="block text-sm font-medium leading-6 text-gray-900">Category</label>
+              </div>
+              <div class="mt-2">
+                <input id="category" name="category" type="text" placeholder="Enter Category" required class="block w-full rounded-md border-0 py-1.5 px-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+      
+            <div>
+              <div class="flex items-center justify-between">
+                <label for="date" class="block text-sm font-medium leading-6 text-gray-900">Date</label>
+              </div>
+              <div class="mt-2">
+                <input id="date" name="date" type="date" placeholder="Select date" required class="block w-full rounded-md border-0 py-1.5 px-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+        </div>
+
+      <div>
+        <button type="button" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Add Expense</button>
+      </div>
+    </form>
+    </section>
+    </main>
+  </body>
+</html>

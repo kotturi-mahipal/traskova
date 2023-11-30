@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+    --com-background: #3335b6;
+    --text-color: #fbfad3;
+}
+
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    background-color: #f6f9ff;
+}
+
+h2, h3 {
+    text-transform: uppercase;
+}
+
+header {
+    max-width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0.1875rem 0.3125rem rgba(0,0,0,0.1);
+    background-color: var(--com-background);
+    color: var(--text-color);
+}
+
+.add-button {
+    color: var(--com-background);
+}
+
+.add-expense {
+    background-color: var(--com-background);
+}
+
+#transactions {
+    background-color: var(--com-background);
+}
+
+.u-button {
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+
+
+
+
