@@ -1,5 +1,6 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function Home() {
-  return ( <div>Hello Next.js! 👋🏻</div> )
+  return <Button variant="destructive">Hello Next.js 🫰</Button>
 }
